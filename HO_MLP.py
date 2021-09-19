@@ -1,10 +1,8 @@
 import hyperopt
 import tensorflow as tf
-
 import keras
 from keras.layers import concatenate, Lambda
 from hyperopt import fmin, hp
-
 import sys
 os.environ["KERAS_BACKEND"] = "tensorflow"
 
@@ -74,6 +72,7 @@ best = fmin(f_nn, space, algo=tpe.suggest, max_evals=50, trials=trials)
 with open("trial_obj.pkl", "wb") as f:
     pickle.dump(trials, f, -1)
 
+# save the search results
 f = open("HO_results.log", "w")
 for i, tr in enumerate(trials.trials):
     f.write("Trial; " + str(i) + ";" + "train_loss;" + str(tr['result']['train_loss'])
