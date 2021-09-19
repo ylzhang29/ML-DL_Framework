@@ -1,4 +1,4 @@
-# examples of feature importance for various models
+# examples of feature importance analysis for various models
 
 import shap
 import numpy as ny
