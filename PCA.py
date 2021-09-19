@@ -1,4 +1,5 @@
-#################### PCA  to reconstruct new features  ###################
+# PCA  to reconstruct new features  #
+
 from sklearn.decomposition import PCA
 import numpy as np
 
