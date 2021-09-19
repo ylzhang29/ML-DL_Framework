@@ -13,7 +13,7 @@ import os
 os.environ["KERAS_BACKEND"] = "tensorflow"
 
 input_dim = len(features[1])
-output_dim = 1
+output_dim = 1 # or more for multiple targets
 
 #Hyper-Parameters for the base MLP model
 layer1 = 100
