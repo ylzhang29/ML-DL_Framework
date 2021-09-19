@@ -1,3 +1,5 @@
+# read tabular data and preparing features and targets
+
 ''' read data to features -x and targets - y
 x, y =
 '''
