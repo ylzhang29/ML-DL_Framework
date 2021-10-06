@@ -8,5 +8,6 @@ Content List:
 5. sklearn model hyperparameter search
 6. MLP model
 7. Hyperopt search for MLP 
-8. generate ensemble prediction of a MLP model
-9. feature importance analysis
+8. Ensemble-MLP model
+9. Seq2Seq model with GRU unit
+10. feature importance analysis
