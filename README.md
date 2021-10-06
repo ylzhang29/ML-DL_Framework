@@ -10,4 +10,5 @@ Content List:
 7. Hyperopt search for MLP 
 8. Ensemble-MLP model
 9. Seq2Seq model with GRU unit
-10. feature importance analysis
+10. RNN model with LSTM
+11. feature importance analysis
