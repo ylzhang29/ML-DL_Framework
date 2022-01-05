@@ -43,7 +43,7 @@ space = {
 def f_nn(params):
     print('Params testing: ', params)
     input = Input(shape=(input_dim,))
-    fc = Dense(units=int(params['layer1']), activation=params['act'], name ="fc1")(input_img)
+    fc = Dense(units=int(params['layer1']), activation=params['act'], name ="fc1")(input)
     fc = Dropout(params['dropout1'])(fc)
     fc2 = Dense(units=int(params['layer2']), activation=params['act'], name ="fc2")(fc)
     fc2 = Dropout(params['dropout2'])(fc2)
