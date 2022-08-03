@@ -1,7 +1,7 @@
 from sklearn.svm import NuSVC, LinearSVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import RidgeClassifier, LogisticRegression
-from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
 
 rf  = RandomForestClassifier(random_state = 44, max_depth=3, max_features=.2, n_estimators=100, n_jobs = 7)
 # rf = AdaBoostClassifier(rf, n_estimators= 10, random_state=0, algorithm='SAMME', learning_rate=.01)
