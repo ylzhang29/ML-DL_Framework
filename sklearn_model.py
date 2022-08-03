@@ -23,7 +23,7 @@ print("validation AUC :", roc_auc_score(y_valid, (kn.predict_proba(X_valid)[:,1]
 lsv= LinearSVC(dual=False, random_state=0, C = 1, loss = 'squared_hinge', penalty = 'l2',)
 # lsv = AdaBoostClassifier(lsv, n_estimators=10, random_state=0, algorithm='SAMME', learning_rate=.01)
 lsv.fit(X_train, y_train)
-print("validation AUC :", roc_auc_score(y_train, (lsv.decision_function(X_train))))
+print("Training AUC :", roc_auc_score(y_train, (lsv.decision_function(X_train))))
 print("validation AUC :", roc_auc_score(y_valid, (lsv.decision_function(X_valid))))
 
 rg = RidgeClassifier(solver="auto", random_state=0, alpha = 0.9, tol = 0.0001)
